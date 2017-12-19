@@ -16,6 +16,7 @@ function button() {
   i++;
 }
 function comparaison(entier, util) {
+
   if (i > 5 && entier != util && i < 10 && entier <= 10){
     alert("Courage! C'est entre 1 et 10!");
   }
@@ -46,34 +47,38 @@ function comparaison(entier, util) {
   if (i > 5 && entier != util && i < 10 && entier > 90 && entier <= 100){
     alert("Courage! C'est entre 91 et 100!");
   }
-  if (util > entier) {
-    // alert("Moins");
+
+  if (util > 100 || util < 1) {
+    document.getElementById("infos").innerHTML = "Entre 1 et 100 abruti!";
+    console.log("Nombre choisi par l'utilisateur");
+    console.log(util);
+    console.log("essai "+i);
+  }  else if (util > entier) {
     document.getElementById("infos").innerHTML = "Moins";
     console.log("Nombre choisi par l'utilisateur");
     console.log(util);
     console.log("essai "+i);
   } else if (util < entier) {
-    // alert("Plus");
     document.getElementById("infos").innerHTML = "Plus";
     console.log("Nombre choisi par l'utilisateur");
     console.log(util);
     console.log("essai "+i);
   } else if (isNaN(util)){
-    // alert("Ce n'est pas un chiffre!");
     console.log("Nombre choisi par l'utilisateur");
     console.log(util);
     console.log("essai "+i);
     document.getElementById("infos").innerHTML = "Ce n'est pas un chiffre!";
   } else if (entier==util && i<= 10){
-    document.getElementById("infos").innerHTML = "";
+    document.getElementById("infos").innerHTML = 'C\'est gagné!';
+    document.getElementById("infos2").innerHTML = '<img style="height: 100px; width: 100px;" alt="imagewin" src="img/win.jpg">';
     console.log("Nombre choisi par l'utilisateur");
     console.log(util);
     console.log("essai "+i);
     var gagné = true;
     console.log("C'est gagné!");
+    document.getElementById("div3").style.backgroundColor = "rgba(21, 111, 49, 0.75)";
     alert("C'est gagné!");
     console.log("Fin du script!");
-
   } else {
     console.log("Nombre choisi par l'utilisateur");
     console.log(util);
