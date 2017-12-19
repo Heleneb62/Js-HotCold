@@ -68,3 +68,17 @@ h2 {
 #infos2 {
   margin-top: 5%;
 }
+.section3 {
+  height: 50px;
+  width: 70%;
+  background-color: rgb(127, 175, 152);
+  margin: 0;
+  display: flex;
+}
+.histo {
+  margin-top: 8%;
+}
+#infos3 {
+  margin-top: 16%;
+  overflow: hidden;
+}

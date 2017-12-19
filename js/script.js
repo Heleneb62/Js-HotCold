@@ -14,6 +14,7 @@ function button() {
   var util = document.getElementById("choix").value;
   comparaison(entier, util);
   i++;
+  document.getElementById("infos3").innerHTML += " "+util;
 }
 function comparaison(entier, util) {
 
