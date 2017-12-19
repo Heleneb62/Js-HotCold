@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <title>PLUS OU MOINS - JAVASCRIPT</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="js/script.js"></script>
+    <section class="un">
+      <h1>Jeu du plus ou moins</h1>
+    </section>
+    <section class="deux">
+      <div class="div1">
+        <h2> Règles du jeu </h2>
+        <p>Notre programme choisit aléatoirement un nombre entre 1 et 100 et
+        vous devez deviner celui-ci ! Seule indication entre chaque essai,
+        si le nombre à trouver est supérieur à votre proposition, ce sera
+        indiqué "plus" et si c'est le cas contraire, ce sera indiqué "moins".
+        Vous avez le droit à 10 essais, sinon c'est perdu!</p>
+          <input type="text" placeholder="Saisissez un chiffre entre 1 et 100" id="choix"/>
+          <button onclick="button()"> Entrer </button>
+      </div>
+      <div class="div2" id="div3">
+        <h2> Indications Plus / Moins</h2>
+        <div id="infos">
+        </div>
+      </div>
+    </section>
+
+
+  </body>
+</html>
